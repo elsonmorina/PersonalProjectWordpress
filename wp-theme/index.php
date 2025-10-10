@@ -1,10 +1,11 @@
+
 <?php  get_header(); ?>
 
 
 <div id="content" class="site-content">
    <div id="primary" class="content-area">
       <main id="main" class="site-main">
-         <h1>Elsoni</h1>
+         <h1>Blog</h1>
          <div class="container">
            <div class="blog-items">
 
@@ -32,7 +33,7 @@
                  <p>Nothing yet to be displayed!</p>
                  <?php endif; ?>
            </div>
-              
+              <?php get_sidebar();  ?>
          </div>
       </main>
 
