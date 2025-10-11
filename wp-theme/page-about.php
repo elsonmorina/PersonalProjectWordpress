@@ -5,51 +5,44 @@ Template Name: About Page
 get_header();
 ?>
  
-<div id="content" class="site-content">
-    <main id="main" class="site-main">
-        <section class="about-hero">
-            <div class="container">
-                <h1>About Us</h1>
-                <p>Welcome to our tech corner — where innovation meets explanation.</p>
-            </div>
-        </section>
- 
-        <section class="about-intro">
-            <div class="container">
-                <h2>Who We Are</h2>
-                <p>We are a team of developers, engineers, and tech enthusiasts who love to write about the fast-moving world of technology. From in-depth tutorials and product reviews to AI breakthroughs and coding best practices, we bring clarity to complexity.</p>
-            </div>
-        </section>
- 
-        <section class="about-mission">
-            <div class="container">
-                <h2>Our Mission</h2>
-                <p>Our goal is simple: to empower curious minds and passionate techies by delivering accurate, useful, and accessible content. Whether you're a seasoned developer or just getting started, we aim to be your go-to resource for tech knowledge.</p>
-            </div>
-        </section>
-       
-        <section class="about-what-we-cover">
-           <div class="container">
-               <h2>What We Cover</h2>
-               <ul>
-                   <li>Programming tutorials and tips</li>
-                   <li>Software and app reviews</li>
-                   <li>AI, machine learning and data science insights</li>
-                   <li>Web development, DevOps , and cloud computing</li>
-                   <li>Trends in tech and industry news</li>
-               </ul>
-           </div>
-        </section>
+<div class="about-us-container">
+  <h1 class="about-us-header">About Us</h1>
+  <p class="about-us-paragraph">
+    Welcome to Football Hub, your go-to source for the latest and most exciting football news from around the world. 
+    We are passionate about bringing you up-to-date coverage, exclusive interviews, and in-depth analysis of your favorite players and teams.
+  </p>
+  <p class="about-us-paragraph">
+    Our mission is to connect football fans globally by delivering accurate, engaging, and timely content. Whether you're a casual follower or a die-hard fan, Football Hub is here to keep you informed and entertained.
+  </p>
 
-        <section class="about-contact">
-            <div class="container">
-                 <h2>Want to Connect?</h2>
-                 <p>We love hearing from our readers! Reach out to us via our <a href="/contact">Contact page</a> or follow us on socila media to stay updated.</p>
-                   
-            </div>
-        </section>
+  <h2 class="about-us-subheader">Our Team</h2>
+  <div class="about-us-team">
+    <div class="about-us-team-member">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith - Founder & Editor" />
+      <h3>John Smith</h3>
+      <p>Founder & Editor</p>
+      <p>John is a lifelong football fan and veteran sports journalist who leads our editorial team with passion and integrity.</p>
+    </div>
 
-    </main>
+    <div class="about-us-team-member">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria Lopez - Senior Reporter" />
+      <h3>Maria Lopez</h3>
+      <p>Senior Reporter</p>
+      <p>Maria covers major football events and conducts exclusive player interviews to bring you firsthand insights.</p>
+    </div>
+
+    <div class="about-us-team-member">
+      <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Alex Chen - Social Media Manager" />
+      <h3>Alex Chen</h3>
+      <p>Social Media Manager</p>
+      <p>Alex manages our vibrant online community, sharing breaking news and engaging content across social platforms.</p>
+    </div>
+  </div>
 </div>
+
+<footer class="about-us-footer">
+  &copy; 2025 Football Hub. All rights reserved.
+</footer>
+
  
 <?php  get_footer();  ?>

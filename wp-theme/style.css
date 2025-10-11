@@ -1,6 +1,6 @@
 /*
 
-Theme Name: Wp Theme
+Theme Name: elsoni
 Theme URI: https://wordpress.org/themes/wpadvanced/
 Author: the Wordpress Team
 Author URI: https://wordpress.org
@@ -603,7 +603,7 @@ img {
 .services h2::after{
     content: '';
     position: absolute;
-    background-color: var( --wp-light-blue );
+    background-color: var(  );
     width: 35px;
     height: 5px;
     right: calc( 50% - 15px);
@@ -1146,9 +1146,9 @@ a img.aligncenter {
 
       .contact-form {
         max-width: 600px;
-        margin: 50px auto; /* Adds vertical and horizontal margin */
-        padding-top: 40px;  /* Adds space above the form */
-        padding-bottom: 40px; /* Adds space below the form */
+        margin: 50px auto; 
+        padding-top: 40px;  
+        padding-bottom: 40px; 
     }
     
  
@@ -1213,4 +1213,276 @@ a img.aligncenter {
         border-bottom: 2px solid black; /* optional underline */
         padding-bottom: 10px;        /* space between title and underline */
     }
-    
+
+
+    /* Container */
+  #football-news {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+  }
+
+  /* Heading */
+  #football-news > h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #004080;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+
+  /* Each Article */
+  .news-article {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 25px;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Remove border for last article */
+  .news-article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* Article Titles */
+  .news-article h3 {
+    font-size: 1.5rem;
+    color: #0077cc;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Article Paragraph */
+  .news-article p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  /* Links */
+  .news-article a {
+    color: #0077cc;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .news-article a:hover,
+  .news-article a:focus {
+    color: #004080;
+    text-decoration: underline;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    #football-news {
+      padding: 15px 20px;
+    }
+
+    #football-news > h2 {
+      font-size: 1.8rem;
+    }
+
+    .news-article h3 {
+      font-size: 1.25rem;
+    }
+  }
+
+  /* About Us Page Styles */
+
+.about-us-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.about-us-header {
+  font-size: 2.8rem;
+  color: #004080;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about-us-subheader {
+  font-size: 1.8rem;
+  color: #0077cc;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.about-us-paragraph {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.about-us-team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.about-us-team-member {
+  background-color: #e9f0fb;
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0, 119, 204, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.about-us-team-member:hover {
+  transform: translateY(-5px);
+}
+
+.about-us-team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #0077cc;
+}
+
+.about-us-team-member h3 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+  color: #004080;
+}
+
+.about-us-team-member p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.about-us-footer {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .about-us-container {
+    padding: 25px 20px;
+  }
+
+  .about-us-team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us-team-member {
+    width: 90%;
+  }
+}
+/* Contact Us Page Styles */
+  .contactus-wrapper {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+
+  .contactus-title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #004080;
+    margin-bottom: 20px;
+  }
+
+  .contactus-intro {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #444;
+    text-align: center;
+  }
+
+  .contactus-intro a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contactus-intro a:hover,
+  .contactus-intro a:focus {
+    color: #004080;
+    text-decoration: underline;
+  }
+
+  .contactus-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .contactus-label {
+    font-weight: 600;
+    color: #0077cc;
+    font-size: 1rem;
+  }
+
+  .contactus-input,
+  .contactus-textarea {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+    resize: vertical;
+  }
+
+  .contactus-input:focus,
+  .contactus-textarea:focus {
+    outline: none;
+    border-color: #0077cc;
+    box-shadow: 0 0 6px rgba(0, 119, 204, 0.3);
+  }
+
+  .contactus-btn {
+    background-color: #0077cc;
+    color: white;
+    padding: 15px 0;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+
+  .contactus-btn:hover,
+  .contactus-btn:focus {
+    background-color: #004080;
+  }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    .contactus-wrapper {
+      padding: 30px 20px;
+    }
+  }
