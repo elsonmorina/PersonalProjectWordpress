@@ -322,6 +322,7 @@ img {
     margin-left: auto;
 }
 
+
 @media (max-width: 575px) {
     .container {
         padding: var(--wp-light-padding);
@@ -1395,94 +1396,101 @@ a img.aligncenter {
     width: 90%;
   }
 }
-/* Contact Us Page Styles */
-  .contactus-wrapper {
-    max-width: 700px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 40px 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+/* General Styles */
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f8;
+    margin: 0;
+    padding: 0;
     color: #333;
-  }
+}
 
-  .contactus-title {
+/* Contact Hero Section */
+.contact-hero {
+    background-color: #005f73;
+    color: white;
+    padding: 80px 20px;
     text-align: center;
-    font-size: 2.8rem;
-    color: #004080;
-    margin-bottom: 20px;
-  }
+}
 
-  .contactus-intro {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    color: #444;
-    text-align: center;
-  }
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
 
-  .contactus-intro a {
-    color: #0077cc;
-    text-decoration: none;
-    font-weight: 600;
-  }
+.contact-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-  .contactus-intro a:hover,
-  .contactus-intro a:focus {
-    color: #004080;
-    text-decoration: underline;
-  }
+/* Contact Form Section */
+.contact-form-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
 
-  .contactus-form {
+.contact-form-section .container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
-    gap: 18px;
-  }
+    gap: 20px;
+}
 
-  .contactus-label {
+.contact-form p {
+    margin: 0;
+}
+
+.contact-form label {
+    display: block;
     font-weight: 600;
-    color: #0077cc;
-    font-size: 1rem;
-  }
+    margin-bottom: 8px;
+    color: #333;
+}
 
-  .contactus-input,
-  .contactus-textarea {
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
     padding: 12px 15px;
-    border-radius: 8px;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
+    border-radius: 6px;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
-    font-family: inherit;
-    resize: vertical;
-  }
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
 
-  .contactus-input:focus,
-  .contactus-textarea:focus {
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #00a896;
     outline: none;
-    border-color: #0077cc;
-    box-shadow: 0 0 6px rgba(0, 119, 204, 0.3);
-  }
+    box-shadow: 0 0 0 3px rgba(0, 168, 150, 0.2);
+}
 
-  .contactus-btn {
-    background-color: #0077cc;
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #00a896;
     color: white;
-    padding: 15px 0;
-    font-size: 1.1rem;
     border: none;
-    border-radius: 8px;
+    padding: 14px 25px;
+    font-size: 1.1rem;
+    border-radius: 6px;
     cursor: pointer;
-    font-weight: 700;
-    transition: background-color 0.3s ease;
-  }
+    transition: background-color 0.3s;
+}
 
-  .contactus-btn:hover,
-  .contactus-btn:focus {
-    background-color: #004080;
-  }
-
-  /* Responsive */
-  @media (max-width: 480px) {
-    .contactus-wrapper {
-      padding: 30px 20px;
-    }
-  }
+.contact-form input[type="submit"]:hover {
+    background-color: #028a74;
+}

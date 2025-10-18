@@ -8,6 +8,7 @@
     wp_head();
 
     ?>
+    
 </head>
 <?php
  if(is_front_page()) {

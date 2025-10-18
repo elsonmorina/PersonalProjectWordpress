@@ -17,8 +17,8 @@
 
      <div id="overlay">
 
-       <div id="left_button" class="overlay_button" onclick="onLeftButton()" ><</div>
-       <div id="right_button" class="overlay_button" onclick="onRightButton()" >></div>
+       <div id="left_button" class="overlay_button" onclick="onLeftButton()" >←</div>
+       <div id="right_button" class="overlay_button" onclick="onRightButton()" >→</div>
      </div>
    </div>
 </div>
