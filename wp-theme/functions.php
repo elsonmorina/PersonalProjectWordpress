@@ -77,7 +77,7 @@ function wpdevs_sidebars() {
   );
      register_sidebar(
      array(
-       'name' => 'Service 2',
+       'name' => 'Service 3',
        'id' => 'services-3',
        'description' => 'Third service area',
        'before_widget' => '<div class="wiget-wrapper">',

@@ -1,6 +1,6 @@
 <?php  get_header(); ?>
 
-<div id="container">
+<!-- <div id="container">
    <div id="inner_container">
        <div class="img_container">
            <img src="<?php echo get_template_directory_uri();?> /images/messi.webp">
@@ -21,7 +21,7 @@
        <div id="right_button" class="overlay_button" onclick="onRightButton()" >→</div>
      </div>
    </div>
-</div>
+</div> -->
 
 
 <div style="text-align:center">
